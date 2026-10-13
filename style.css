@@ -1,0 +1,71 @@
+/*--- CSS Reset & Variables---*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg:#f4f4f9;
+    --text:#1a1a2e;
+    --card:#ffffff;
+    --accent:#6c63ff;
+    --shadow:0 8px 24px rgba(0,0,0,0.8);
+    --radius:16px;
+}
+
+.dark{
+    --bg:#1a1a2e;
+    --text:#f4f4f9;
+    --card:#2d2d44;
+    --shadow:0 8px 24px rgba(0,0,0,0.3);
+}
+
+body{
+    font-family:'Segoe UI', system-ui, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    transition:0.3s;
+    line-height:1.6;
+    padding:2rem 1rem;
+}
+
+.container{
+    max-width:900px;
+    margin:0 auto;
+}
+
+/*---Header---*/
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-bottom:3rem;
+}
+
+h1{
+    font-size:2.2rem;
+}
+
+.tagline{
+    color:var(--accent);
+    font-weight:500;
+}
+
+#themeToggle{
+    background:var(--card);
+    border:none;
+    padding:0.6rem 1.2rem;
+    border-radius:30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: var(--shadow);
+    transition: 0.2s;
+}
+
+#themeToggle:hover{
+    transform: scale(1.05);
+}
+
